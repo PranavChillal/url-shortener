@@ -1,0 +1,166 @@
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.subtitle {
+  margin: 6px 0 28px;
+  color: #6b7280;
+}
+
+.shorten-form {
+  display: flex;
+  gap: 10px;
+}
+
+.shorten-form input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+}
+
+.shorten-form input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #6366f1;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #4f46e5;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  color: #374151;
+  background: #e5e7eb;
+}
+
+button.secondary:hover:not(:disabled) {
+  background: #d1d5db;
+}
+
+.error {
+  margin-top: 14px;
+  padding: 10px 14px;
+  color: #b91c1c;
+  background: #fee2e2;
+  border-radius: 8px;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: #eef2ff;
+  border-radius: 10px;
+}
+
+.result a {
+  font-weight: 600;
+  color: #4338ca;
+  word-break: break-all;
+}
+
+.result button {
+  padding: 6px 14px;
+  font-size: 0.9rem;
+}
+
+.links-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.links-header h2 {
+  margin: 0;
+}
+
+.empty {
+  color: #6b7280;
+}
+
+.links {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+}
+
+.links li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.link-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.link-main a {
+  font-weight: 600;
+  color: #4338ca;
+}
+
+.original {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 420px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.link-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 520px) {
+  .shorten-form {
+    flex-direction: column;
+  }
+  .original {
+    max-width: 200px;
+  }
+}
